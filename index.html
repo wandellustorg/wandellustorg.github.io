@@ -11,12 +11,52 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <style>
+        body {
+            height: inherit;
+            background-image: url(https://scontent.fzrh3-1.fna.fbcdn.net/v/t1.0-9/14484697_1428925797136790_2476364306733317146_n.jpg?_nc_cat=110&_nc_oc=AQmVsMbav5PeCnRxwWYOva5OrjhwU7QPTZeOVXvvT3M2DA85wuDmMnZJogGF37FrLdc&_nc_ht=scontent.fzrh3-1.fna&oh=041aa671ca2c0e852953b2f28b097cc1&oe=5E5850BB);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            overflow: scroll;
+        }
+
+        .transparent-bg {
+            background-color: rgba(245, 245, 245, 0.2);
+            /* opacity: .4; */
+        }
+
+        .bg-color-1 {
+            background-color: rgba(204, 198, 198, 1.0);
+        }
+
+        .bg-color-2 {
+            background-color: rgba(240, 237, 237, 1.0);
+        }
+
+        .bg-color-3 {
+            background-color: rgba(250, 220, 214, 1.0);
+        }
+
+        .bg-color-4 {
+            background-color: rgba(229, 199, 181, 1.0);
+        }
+
+        .cut-img {
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+    </style>
     <title>Wandellust</title>
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="container-fluid">
         <nav class="nav nav-pills nav-fill">
             <a class="nav-item nav-link active" href="#">Startseite</a>
             <a class="nav-item nav-link" href="#">Über mich</a>
@@ -27,12 +67,16 @@
         </nav>
 
         <div class="page-header">
-            <h1>WandelLust</h1>
+            <h1 class="text-center display-1 font-weight-bold" style="padding-top: 15rem">wandelLust</h1>
+            <div class="cut-img">
+                <img src="https://scontent.fzrh3-1.fna.fbcdn.net/v/t1.0-9/37239750_2203174556378573_6453634875630026752_n.jpg?_nc_cat=101&_nc_oc=AQmYu8zs_aEb8ZYKb46k4Kcd8lv6cfZLaw8OdqgpOq5Ou7Lh8fWKiIqhV8pbPOahVX8&_nc_ht=scontent.fzrh3-1.fna&oh=04daa7242b730eb0906c4fb3a613d5e0&oe=5E6395AD"
+                    class="img-fluid" style="width: 100%;" alt="Responsive image">
+            </div>
         </div>
 
         <!-- 4 Categories -->
         <div class="card-group">
-            <div class="card">
+            <div class="card bg-color-1">
                 <div class="card-body">
                     <h5 class="card-title">1.
                         Individuelle Beratung</h5>
@@ -41,7 +85,7 @@
                     <a href="#" class="card-link">weiterlesen</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-color-2">
                 <div class="card-body">
                     <h5 class="card-title">2.
                         Teambuilding Outdoor</h5>
@@ -50,7 +94,7 @@
                     <a href="#" class="card-link">weiterlesen</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-color-3">
                 <div class="card-body">
                     <h5 class="card-title">3.
                         Fortbildung und Workshops</h5>
@@ -59,7 +103,7 @@
                     <a href="#" class="card-link">weiterlesen</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card bg-color-4">
                 <div class="card-body">
                     <h5 class="card-title">4.
                         andere Bedarfe?</h5>
@@ -72,7 +116,7 @@
 
         <!-- Mid section -->
         <div class="card-group">
-            <div class="card">
+            <div class="card transparent-bg">
                 <div class="card-body">
                     <h5 class="card-title">Mein Ansatz</h5>
                     <p class="card-text">Alles bleibt anders... Leben bedeutet Veränderung. Egal ob für Sie persönlich,
@@ -91,9 +135,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="" alt="Card image cap">
+                <img class="card-img-top"
+                    src="https://scontent.fzrh3-1.fna.fbcdn.net/v/t1.0-9/10423934_10153280285688898_7407354699262661940_n.jpg?_nc_cat=101&_nc_oc=AQlu0aspFgEicZQq8ojmG9N1myEOtYhYqHa5TIkYEDx7rlb9i3AI2v4It1BCC21rXk8&_nc_ht=scontent.fzrh3-1.fna&oh=1c09bab82ff3b44f673e8252c11860c8&oe=5E2AEBC2"
+                    alt="Card image cap">
             </div>
-            <div class="card">
+            <div class="card transparent-bg">
                 <div class="card-body">
                     <h5 class="card-title">Über mich</h5>
                     <p class="card-text">Mein Name ist Corinna Fleischer. Ich bin Psychologin, Mediatorin und
@@ -118,10 +164,11 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card">
+                    <div class="card bg-color-3" style="height: 25rem;">
                         <div class="card-body">
                             <p class="card-text">Ich suche nicht – ich finde.
                                 Suchen – das ist Ausgehen von alten Beständen und ein Finden-Wollen von bereits
@@ -141,7 +188,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card" style="height: 25rem;">
+                    <div class="card bg-color-3" style="height: 25rem;">
                         <div class="card-body">
                             <p class="card-text">Du musst dein Ändern leben.</p>
                             <p class="card-text"><small class="text-muted">Rainer Maria Rilke</small></p>
@@ -149,7 +196,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card" style="height: 25rem;">
+                    <div class="card bg-color-3" style="height: 25rem;">
                         <div class="card-body">
                             <p class="card-text">Man muss Geduld haben mit dem Ungelösten im Herzen,
                                 und versuchen, die Fragen selber lieb zu haben,
@@ -164,7 +211,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card" style="height: 25rem;">
+                    <div class="card bg-color-3" style="height: 25rem;">
                         <div class="card-body">
                             <p class="card-text">Denn was neu ist wird alt und was gestern noch galt
                                 Stimmt schon heut' oder morgen nicht mehr.
@@ -189,20 +236,23 @@
 
         <!-- Kontakt form -->
 
-        <div class="card">
+        <div class="card transparent-bg">
             <div class="card-body">
                 <h5 class="card-title">Kontakt</h5>
                 <form>
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <input type="name" class="form-control" id="name_form" placeholder="Name">
+                                <input type="name" class="form-control transparent-bg" id="name_form"
+                                    placeholder="Name">
                             </div>
                             <div class="col">
-                                <input type="email" class="form-control" id="email_form" placeholder="Email">
+                                <input type="email" class="form-control transparent-bg" id="email_form"
+                                    placeholder="Email">
                             </div>
                         </div>
-                        <input type="betreff" class="form-control" id="betreff_form" placeholder="Betreff">
+                        <input type="betreff" class="form-control transparent-bg" id="betreff_form"
+                            placeholder="Betreff">
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
